@@ -1,29 +1,36 @@
-create env
+### create env
 
-conda create -n wineq python=3.7 -y
-activate env
+- conda create -n wineq python=3.7 -y
 
-conda activate wineq
-created a req file
+### activate env
 
-install the req
+- conda activate wineq
 
-pip install -r requirements.txt
-download the data from
+### created a req file
 
-https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
+### install the req
 
-git init
-dvc init 
-dvc add data_given/winequality.csv
-git add .
-git commit -m "first commit"
-oneliner updates for readme
+- pip install -r requirements.txt
 
-git add . && git commit -m "update Readme.md"
-git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
-git branch -M main
-git push origin main
+### download the data from
+
+- https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
+
+### Open Git Bash
+
+- git init
+- dvc init 
+- dvc add data_given/winequality.csv
+- git add .
+- git commit -m "first commit"
+
+### oneliner updates for readme
+
+- git add . && git commit -m "update Readme.md"
+- git remote add origin https://github.com/imkushwaha/MLOps-Simple_DVC_Demo-.git
+- git branch -M main
+- git push origin main
+
 tox command -
 
 tox
