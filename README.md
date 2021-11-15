@@ -31,19 +31,22 @@
 - git branch -M main
 - git push origin main
 
-tox command -
+### tox command
 
-tox
-for rebuilding -
+- tox
 
-tox -r 
-pytest command
+### for rebuilding -
+- tox -r 
 
-pytest -v
-setup commands -
+### pytest command
 
-pip install -e . 
-build your own package commands-
+- pytest -v
 
-python setup.py sdist bdist_wheel
+### setup commands -
+
+- pip install -e .
+
+### build your own package commands-
+
+- python setup.py sdist bdist_wheel
 
