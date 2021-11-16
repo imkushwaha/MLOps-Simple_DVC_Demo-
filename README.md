@@ -50,3 +50,9 @@
 
 - python setup.py sdist bdist_wheel
 
+
+### DVC Command
+
+- dvc repro (To run pipeline again and again if some change is there)
+- dvc metrics show (To show eval metrics)
+- dvc metrics dif (Give comparison between previous and current params and metrics)
