@@ -56,3 +56,12 @@
 - dvc repro (To run pipeline again and again if some change is there)
 - dvc metrics show (To show eval metrics)
 - dvc metrics dif (Give comparison between previous and current params and metrics)
+
+### After making setup.py
+pip install -e .
+
+## To see your package get installed
+  174  pip freeze
+
+## To make distribution tar.gz file of your package to share
+  175  python setup.py sdist bdist_wheel         (sdist: standarddistribution and bdist: builddistribution)
