@@ -22,7 +22,7 @@ def read_params(config_path):
         config = yaml.safe_load(yaml_file)
     return config
 
-def predcit(data):
+def predict(data):
     config = read_params(params_path)
     model_dir_path = config["webapp_model_dir"]
     model = joblib.load(model_dir_path)
@@ -49,7 +49,7 @@ def index():
             if request.form:
                 data = dict(request.form).values()
                 data = [list(map(float,data))]
-                response = predcit(data)
+                response = predict(data)
                 #response = prediction.form_response(dict_req)
                 return render_template("index.html", response=response)
             elif request.json:
